@@ -5,34 +5,27 @@ using namespace std;
 
 int main()
 {
-	int Map[10][10] =
-	{
-		{1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
-		{1, 0, 0, 0, 0, 0, 0, 0, 0, 1},
-		{1, 0, 0, 0, 0, 0, 0, 0, 0, 1},
-		{1, 0, 0, 0, 0, 0, 0, 0, 0, 1},
-		{1, 0, 0, 0, 0, 0, 0, 0, 0, 1},
-		{1, 0, 0, 0, 0, 0, 0, 0, 0, 1},
-		{1, 0, 0, 0, 0, 0, 0, 0, 0, 1},
-		{1, 0, 0, 0, 0, 0, 0, 0, 0, 1},
-		{1, 0, 0, 0, 0, 0, 0, 0, 0, 1},
-		{1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
-	};
+	float Color = 0;
+	char Alphabet = 'A';
+	bool Condition = true;
+	bool IsFinish = false;
+	bool IsRunning = true;
 
-	for (int i = 0; i < 10; i++)
+	char Key = 0;
+	for ( ; IsRunning; )
 	{
-		for (int j = 0; j < 10; j++)
+		//Input
+		cin >> Key;
+
+		// Procees
+		if (Key == 'Q')
 		{
-			cout << Map[i][j];
+			IsRunning = false;
 		}
-		cout << endl;
+
+		//Render
+		cout << "Hello World" << endl;
 	}
-
-
-	//Game Loop
-	//for (;;) 
-	//Input();
-	//Process();
-	//Render();
+	
 	return 0;
 }
